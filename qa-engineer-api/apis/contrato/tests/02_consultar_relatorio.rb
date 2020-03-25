@@ -24,7 +24,7 @@ RSpec.describe 'Contrato da consulta de relatórios:' do
     if VALID
       expect(info_relatorio.resultado).to eq 'VALID'
     else
-      expect(info_relatorio.resultado).to eq 'INVALID
+      expect(info_relatorio.resultado).to eq 'INVALID'
     end
 
   end
