@@ -34,6 +34,11 @@ env=invalid bundle exec rspec tests/* --order defined -fd
 
 Sugestão de implementação: fazer a consulta dos dados diretamente num banco.
 
+## Rodando num CI
+Este projeto está configurado para rodar no CircleCI, basta integrar o repositório e configurar a variável de ambiente IDWALL_TOKEN.
+
+Configurações em `.circleci/config.yml`
+
 
 ## Escondendo o token
 <a name="ambienteLocal"></a>
