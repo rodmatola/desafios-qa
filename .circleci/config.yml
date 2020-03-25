@@ -21,7 +21,7 @@ jobs:
           name: Dados inválidos
           command: |
             cd qa-engineer-api/apis/contrato
-            env=invalid bundle exec rspec tests/01* --order defined -fd \
+            env=invalid bundle exec rspec tests/* --order defined -fd \
                                                   --format RspecJunitFormatter \
                                                   --out /home/circleci/project/test_results/rspec.xml
       - store_test_results:

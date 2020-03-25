@@ -28,8 +28,6 @@ RSpec.describe 'Contrato da geração de relatórios:' do
       expect(info_relatorio.status).to include("PROCESSANDO")
 
       $numero_relatorio = relatorio.numero
-      puts "criado"
-      puts $numero_relatorio
 
     end
 
