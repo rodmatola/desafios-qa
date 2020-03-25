@@ -81,8 +81,9 @@ Para a consulta de relatórios, a automação espera até que o status da consul
 
 ### Implementações futuras:
 - rodar a consulta do relatório em paralelo
+- O teste da criação de relatórios contém verificações mínimas para saber se foi criado com sucesso. Como esse teste já tem mais de uma responsabilidade, colocar outras verificações nos testes de consulta.
+- regras para o status "EM ANALISE"
 
-O teste da criação de relatórios contém verificações mínimas para saber se foi criado com sucesso. Como esse teste já tem mais de uma responsabilidade, colocar outras verificações nos testes de consulta.
 
 
 ## Outras validações
