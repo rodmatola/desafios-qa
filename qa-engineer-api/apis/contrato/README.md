@@ -25,7 +25,7 @@ em que `--order defined` é para primeiro criar o relatório e depois consultá-
 
 Outras opções de formatação (acrescentar ao final do comando):
 - --format RspecHtmlReporter: para gerar um relatório HTML localmente. Ficará na pasta `reports`
-- --format RspecJunitFormatter --out [nome].xml: para saída no formato JUnit XML, utilizado em CIs (Azure DevOps por exemplo)
+- --format RspecJunitFormatter --out [nome].xml: para saída no formato JUnit XML, utilizado em CIs
 
 Para dados inválidos, acrescente `env=invalid` no início do comando:
 ```ruby
