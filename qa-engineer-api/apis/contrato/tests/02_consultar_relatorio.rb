@@ -13,7 +13,7 @@ RSpec.describe 'Contrato da consulta de relatórios:' do
 
     until info_relatorio.status == 'CONCLUIDO'
       info_relatorio = InfoRelatorioRequest.new($numero_relatorio, AMBIENTE)
-      print "."
+      print '.'
       sleep(60)
     end
 

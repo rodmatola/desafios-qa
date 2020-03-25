@@ -14,7 +14,7 @@ RSpec.describe 'Contrato da geração de relatórios:' do
 
     it 'Criado com sucesso' do
 
-      relatorio = CriarRelatoriosRequest.new(dados.chomp.split(","), AMBIENTE)
+      relatorio = CriarRelatoriosRequest.new(dados.chomp.split(','), AMBIENTE)
       info_relatorio = InfoRelatorioRequest.new(relatorio.numero, AMBIENTE)
 
       expect(relatorio.response.code).to eq 200
@@ -25,7 +25,7 @@ RSpec.describe 'Contrato da geração de relatórios:' do
 
       expect(relatorio.numero).to eq info_relatorio.numero
       expect(relatorio.matriz).to eq info_relatorio.nome
-      expect(info_relatorio.status).to include("PROCESSANDO")
+      expect(info_relatorio.status).to include('PROCESSANDO')
 
       $numero_relatorio = relatorio.numero
 
