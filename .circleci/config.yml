@@ -18,11 +18,18 @@ jobs:
             cd qa-engineer-api/apis/contrato
             bundle check || bundle install
       - run:
-          name: Dados inválidos
+          name: Dados Inválidos
           command: |
             cd qa-engineer-api/apis/contrato
             env=invalid bundle exec rspec tests/* --order defined -fd \
                                                   --format RspecJunitFormatter \
                                                   --out /home/circleci/project/test_results/rspec.xml
+      # - run:
+      #     name: Dados Válidos
+      #     command: |
+      #       cd qa-engineer-api/apis/contrato
+      #       bundle exec rspec tests/* --order defined -fd \
+      #                                             --format RspecJunitFormatter \
+      #                                             --out /home/circleci/project/test_results/rspec.xml
       - store_test_results:
           path: test_results

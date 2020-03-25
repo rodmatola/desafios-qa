@@ -39,6 +39,8 @@ Este projeto está configurado para rodar no CircleCI, basta integrar o reposit�
 
 Configurações em `.circleci/config.yml`
 
+Por padrão, está para rodar somente dados inválidos. Para dados válidos, descomentar no yml e acrescentar em `dados_valido.txt` no formato `data,nome,cpf`.
+
 
 ## Escondendo o token
 <a name="ambienteLocal"></a>
