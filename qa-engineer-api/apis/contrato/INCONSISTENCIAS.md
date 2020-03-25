@@ -1,4 +1,4 @@
-# Inconsitências encontradas
+# Inconsistências encontradas
 
 Neste arquivo descrevo algumas inconsistências que encontrei ao estudar a documentação e a API propriamente dita.
 

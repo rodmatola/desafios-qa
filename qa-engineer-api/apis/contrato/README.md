@@ -1,5 +1,4 @@
 # Idwall - Desafio de automação de testes de API
-[[_TOC_]]
 
 ## Configurações utilizadas
 - Ruby 2.6.3
@@ -107,3 +106,7 @@ Apesar de não fazer parte do desafio, ao testar o endpoint com a sintaxe da doc
 ## Postman
 
 Uma _collection_ do Postman também consta no repositório. Esta _collection_ serve para fazer testes manuais na API. Costumo fazer exploratórios pelo Postaman para aprender o comportamento da API e conferir a documentação antes de automatizá-la.
+
+## Inconsistências encontradas
+
+Ver arquivo [INCONSISTENCIAS.md](https://github.com/rodmatola/desafios-qa/blob/master/qa-engineer-api/apis/contrato/INCONSISTENCIAS.md)
