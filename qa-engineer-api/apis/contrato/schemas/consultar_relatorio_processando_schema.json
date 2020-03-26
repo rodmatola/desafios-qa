@@ -10,7 +10,7 @@
         },
         "status": {
           "type": "string",
-          "enum": ["PRE-PROCESSANDO", "PROCESSANDO"]
+          "enum": ["PRE-PROCESSANDO", "PROCESSANDO", "PENDENTE"]
         },
         "nome": {
           "type": "string"

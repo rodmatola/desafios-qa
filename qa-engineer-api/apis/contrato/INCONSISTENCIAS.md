@@ -16,6 +16,9 @@ Neste arquivo descrevo algumas inconsistências que encontrei ao estudar a docum
 
 - Na página https://github.com/idwall/desafios-qa/tree/master/qa-engineer-api/apis, em "Atenção: Não armazenar o token nos arquivos deste projeto!", deve ser usado "onde" e não "aonde". "Aonde" tem sentido de destino e "onde" expressa ideia de local fixo, moradia, justificando o uso do advérbio onde.
 
+- Na página https://github.com/idwall/desafios-qa/tree/master/qa-engineer-api/planning, o título "Introdução" não ficou formatado.
+
+- Na mesma acima, "ideia" não possui mais acento de acordo com a nova ortografia.
 
 ## API
 ### Por que no Cenário 1 é [ERROR] e no Cenário 2 é [INVALID]
@@ -33,6 +36,7 @@ https://docs.idwall.co/docs/what-is-a-report
 Falta o campo "validation" especificado na documentação
 
 na documentação
+```json
 {
     "error": "Bad Request",
     "message": "child \"parametros\" fails because [\"dado_aleatorio\" is not allowed]",
@@ -44,14 +48,15 @@ na documentação
     },
     "status_code": 400
 }
-
+```
 retorno real
-
+```json
 {
     "error": "Unauthorized",
     "message": "Falha na autenticação. Por favor verifique o token utilizado e se o acesso foi liberado.",
     "status_code": 401
 }
+```
 
 ### Inconsistência de nomenclatura: "matriz" no POST e "nome" no GET
 No payload do POST para o endpoint /relatorios é passado o seguinte parâmetro:
@@ -63,4 +68,23 @@ Já no GET para o mesmo endpoint o "consultaPessoaDefault" possui a chave "nome"
 Essa diferença de nomes para o mesmo parâmetro gera confusão. Favor padronizar.
 
 ### Encontrado um novo status, "PENDENTE", que não consta na documentação.
-Um dos testes no CircleCI da criação do relatório quebrou, pois na documentação consta que os status possíveis são "PRE-PROCESSANDO" e "PROCESSANDO".
+Um dos testes no CircleCI da criação do relatório quebrou, pois na documentação consta que os status possíveis são "PRE-PROCESSANDO" e "PROCESSANDO". Este status foi adicionado ao Schema.
+Response
+```json
+{
+    "result": {
+    "numero": "faada468-010a-48d5-97c2-b4837be60095",
+    "status": "PENDENTE",
+    "nome": "consultaPessoaDefault",
+    "mensagem": null,
+    "resultado": null,
+    "validado_em": null,
+    "validado_por": null,
+    "validado_manualmente": false,
+    "atualizado_em": "2020-03-26T03:03:16.128Z",
+    "criado_em": "2020-03-26T03:03:16.128Z",
+    "criado_por": "rodrigo.matola"
+    },
+    "status_code": 200
+}
+```

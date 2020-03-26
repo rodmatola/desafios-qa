@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/rodmatola/desafios-qa/tree/master.svg?style=svg)](https://circleci.com/gh/rodmatola/desafios-qa/tree/master)
+
 # Idwall - Desafio de automação de testes de API
 
 ## Configurações utilizadas
@@ -39,7 +41,9 @@ Este projeto está configurado para rodar no CircleCI, basta integrar o reposit�
 
 Configurações em `.circleci/config.yml`
 
-Por padrão, está para rodar somente dados inválidos. Para dados válidos, descomentar no yml e acrescentar em `dados_valido.txt` no formato `data,nome,cpf`.
+Aqui uso o parâmetro adicional `--fail-fast`, para que o teste finalize assim que falhar, não rodando os seguintes.
+
+Por padrão, está para rodar somente dados inválidos para não expor informações sensíveis. Para dados válidos, descomentar no yml e acrescentar em `dados_valido.txt` no formato `data,nome,cpf`.
 
 
 ## Escondendo o token
@@ -82,7 +86,7 @@ Para a consulta de relatórios, a automação espera até que o status da consul
 ### Implementações futuras:
 - rodar a consulta do relatório em paralelo
 - O teste da criação de relatórios contém verificações mínimas para saber se foi criado com sucesso. Como esse teste já tem mais de uma responsabilidade, colocar outras verificações nos testes de consulta.
-- regras para o status "EM ANALISE"
+- regras para o status "EM ANALISE" e como a automação deve se comportar, pois pode ficar mais de um dia nesse status.
 
 
 
