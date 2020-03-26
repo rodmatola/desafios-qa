@@ -61,3 +61,6 @@ Já no GET para o mesmo endpoint o "consultaPessoaDefault" possui a chave "nome"
 "nome": "consultaPessoaDefault"
 
 Essa diferença de nomes para o mesmo parâmetro gera confusão. Favor padronizar.
+
+### Encontrado um novo status, "PENDENTE", que não consta na documentação.
+Um dos testes no CircleCI da criação do relatório quebrou, pois na documentação consta que os status possíveis são "PRE-PROCESSANDO" e "PROCESSANDO".
